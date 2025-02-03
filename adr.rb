@@ -5,20 +5,20 @@
 class Adr < Formula
   desc ""
   homepage "https://github.com/herrmannplatz/adr"
-  version "0.0.1"
+  version "0.0.2"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/herrmannplatz/adr/releases/download/v0.0.1/adr_Darwin_x86_64.tar.gz"
-      sha256 "3cf8594ce98fe89c357dd04a8b01711e8a4a0a7324d8959a2b116682de6638de"
+      url "https://github.com/herrmannplatz/adr/releases/download/v0.0.2/adr_Darwin_x86_64.tar.gz"
+      sha256 "6da7b63506826adc43e425b1ac64d327dfa8595095083c7771f0caf60e9297a4"
 
       def install
         bin.install "adr"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/herrmannplatz/adr/releases/download/v0.0.1/adr_Darwin_arm64.tar.gz"
-      sha256 "d8886fa70a7e8924fbfebd286ddbb3d34c3d03baef68054bb1ed67e73c04d2f0"
+      url "https://github.com/herrmannplatz/adr/releases/download/v0.0.2/adr_Darwin_arm64.tar.gz"
+      sha256 "42113dd14ccc0d437682f3c8767e5235d26c844affe5f49021931af5468b7956"
 
       def install
         bin.install "adr"
@@ -29,8 +29,8 @@ class Adr < Formula
   on_linux do
     if Hardware::CPU.intel?
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/herrmannplatz/adr/releases/download/v0.0.1/adr_Linux_x86_64.tar.gz"
-        sha256 "fe33e0e3d9f47d46d46a62126cbd2296dcd2121898080d74783d23a60c47f002"
+        url "https://github.com/herrmannplatz/adr/releases/download/v0.0.2/adr_Linux_x86_64.tar.gz"
+        sha256 "1f6476b2f2ee9fe4724b7e0b55b2d355094d4cc967a62393fadcc8278eb4a531"
 
         def install
           bin.install "adr"
@@ -39,8 +39,8 @@ class Adr < Formula
     end
     if Hardware::CPU.arm?
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/herrmannplatz/adr/releases/download/v0.0.1/adr_Linux_arm64.tar.gz"
-        sha256 "6fe6d15ec93bb6d2f38894e10c60493a6b59290707598e4834aa3e20658f696e"
+        url "https://github.com/herrmannplatz/adr/releases/download/v0.0.2/adr_Linux_arm64.tar.gz"
+        sha256 "d34a62d1f6bcc78c5f0946fffaa7b55aa6192f20a6c6e3fb8654831d7163e93f"
 
         def install
           bin.install "adr"
